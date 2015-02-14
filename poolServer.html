@@ -1,0 +1,119 @@
+<html>
+<body>
+<table style="width:20%" border="1">
+	<tr><td>Function</td><td>State</td><td>Schedule</td></tr>
+	<tr>
+		<td>Heater:</td>
+		<td width="150%"><br>
+			<form>
+				<input type="radio" name="heater" value="On">On
+				<input type="radio" name="heater" value="Off" checked>Off
+			</form>
+		</td>
+		<td>
+			<select>
+				<option value="8am">8 AM</option>
+				<option value="9am">9 AM</option>
+				<option value="etc">etc</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Pump:</td>
+		<td width="150%"><br>
+			<form>
+				<input type="radio" name="pump" value="On">On
+				<input type="radio" name="pump" value="Off" checked>Off
+			</form>
+		</td>
+		<td>
+			<select>
+				<option value="8am">8 AM</option>
+				<option value="9am">9 AM</option>
+				<option value="etc">etc</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Spa:</td>
+		<td width="150%"><br>
+			<form>
+				<input type="radio" name="spa" value="On">On
+				<input type="radio" name="spa" value="Off" checked>Off
+			</form>
+		</td>
+		<td>
+			<select>
+				<option value="8am">8 AM</option>
+				<option value="9am">9 AM</option>
+				<option value="etc">etc</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Cleaner:</td>
+		<td width="150%"><br>
+			<form>
+				<input type="radio" name="cleaner" value="On">On
+				<input type="radio" name="cleaner" value="Off" checked>Off
+			</form>
+		</td>
+		<td>
+			<select>
+				<option value="8am">8 AM</option>
+				<option value="9am">9 AM</option>
+				<option value="etc">etc</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Pool Lights:</td>
+		<td width="150%"><br>
+			<form>
+				<input type="radio" name="plights" value="On">On
+				<input type="radio" name="plights" value="Off" checked>Off
+			</form>
+		</td>
+		<td>
+			<select>
+				<option value="8am">8 AM</option>
+				<option value="9am">9 AM</option>
+				<option value="etc">etc</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Spa Lights:</td>
+		<td width="150%"><br>
+			<form>
+				<input type="radio" name="slights" value="On">On
+				<input type="radio" name="slights" value="Off" checked>Off
+			</form>
+		</td>
+		<td>
+			<select>
+				<option value="8am">8 AM</option>
+				<option value="9am">9 AM</option>
+				<option value="etc">etc</option>
+			</select>
+		</td>
+	</tr>
+</table>
+<br>
+<input id="btnSubmit" onclick="changeBtn()" type="button" value="Submit"></button>
+<script>
+function changeBtn() {
+	document.getElementById("btnSubmit").value = "Processing...";
+	window.setTimeout(changeBtn1, 1000);
+	}
+function changeBtn1() {
+	document.getElementById("btnSubmit").value = "Changes Saved";
+}
+</script>
+
+
+</body>
+
+
+
+</html>
